@@ -1,0 +1,155 @@
+// SaSS
+@import bourbon/bourbon
+@import 'work'
+@import 'clients'
+@import 'contact'
+@import 'contact_form'
+
+@mixin icon_style
+    background:
+        color: #e5eaee
+        repeat: no-repeat
+        position: center
+    border-radius: 50%
+
+
+#about_me
+    max-width: 780px
+    margin: 20px auto 0px auto
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+
+    #pic_me
+        +size(200px)
+        background: url("../images/Layer 1.png")
+        order: 3
+
+    [id^="icon-"]
+        +size(100px)
+    
+        &#icon-pencil
+            +icon_style
+            background-image: url("../assets/pencil.svg")
+            order: 1
+        &#icon-video
+            +icon_style
+            order: 5
+            background-image: url("../assets/video.svg")
+        &#icon-browser
+            +icon_style
+            order: 4
+            background-image: url("../assets/browser.svg")
+        &#icon-mouse
+            +icon_style
+            order: 2
+            background-image: url("../assets/mouse.svg")
+
+@media screen and (max-width: 650px)
+    #about_me
+        +display(block)
+
+        #pic_me
+            margin: 0 auto
+        
+        [id^="icon-"]
+            float: left
+            +size(15vw)
+            margin: 3vw 0vw 5vw 7vw
+
+        +clearfix
+
+    #skills
+        width: 350px
+        columns: 1
+        margin: 20px auto
+        text-align: left
+
+@media screen and (max-width: 500px)
+    #about_me
+
+        [id^="icon-"]
+            +size(17vw)
+            margin: 3vw 0vw 5vw 5vw
+			
+@media screen and (max-width: 410px)
+    #about_me
+
+        [id^="icon-"]
+            background-size: 45%
+            margin: 3vw 0vw 5vw 5vw	
+
+	
+
+@media screen and (min-width: 650px)
+    #skills
+        width: 630px
+        columns: 2
+        margin: 80px auto 50px auto
+        text-align: left
+
+#skills
+    opacity: 0
+    +transition(900ms)
+    div
+        width: 300px
+        padding: 10px
+        
+        p
+            color: #666666
+            font:
+                family: Sans Serif
+                size: 16px
+            letter-spacing: 2px
+        progress
+            width: 300px
+            height: 5px
+            background-color: #e5eaee
+            &::-webkit-progress-bar
+                background-color: #e5eaee
+            &::-webkit-progress-value
+                background-color: rgb(201,144,101)
+    @media screen and (max-width: 370px)
+        width: 335px
+
+footer
+    max-width: 100%
+    height: 150px
+    background:
+        image: url('../assets/logo.svg'), url('../images/hero-bg.jpg')
+        size: 50px 50px, cover
+        repeat: no-repeat
+        position: 30px 50px, center
+        blend-mode: overlay, normal
+
+    #footer_nav
+        margin-left: 110px
+        float: left
+        margin: 55px 0px 0px 120px
+        
+        p
+            text-transform: uppercase
+            font-family: OpenSans
+            color: rgba(0, 0, 0, 0.85)
+            font: 
+                size: 12px
+                weight: 400
+            text-align: left
+            padding-top: 5px
+
+    @media screen and (max-width: 520px)
+        background-position: 50% 70%, center
+
+        #footer_nav
+            float: none
+            margin: 0
+            padding-top: 20px
+        
+            p
+                display: inline-block
+
+            @media screen and (max-width: 400px)
+                a
+                    font-size: 12px
+                    margin-right: 12px	
+	

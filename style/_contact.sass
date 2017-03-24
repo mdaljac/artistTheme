@@ -1,0 +1,49 @@
+// SaSS
+@import 'icon_fonts'
+
+.contact
+    text-align: center
+
+    .icons
+        max-width: 700px
+        margin: 50px auto
+        +display(flex)
+        +justify-content(space-around)
+        +flex-wrap(wrap-reverse)
+
+        a
+            display: inline-block
+            font-size: 24px
+            +size(50px)
+            border-radius: 50%
+            background-color: #b5845e
+            color: white
+            line-height: 50px
+            +transition
+
+            &:hover
+                +transform(scale(1.2))
+				
+            @media screen and (max-width: 380px)
+                +size(40px)
+                line-height: 40px
+                font-size: 20px
+
+    hr
+        width: 200px
+        margin: 0 auto 60px auto
+        border: 2px solid #b5845e
+
+    .artist-mail
+        margin-bottom: 20px
+        width: 100%
+        font-size: 62px
+        font-weight: 300
+        
+        a
+            text-decoration: none
+            color: #b5845e
+            letter-spacing: 0.2em
+            
+            @media screen and (max-width: 400px)
+                letter-spacing: 0.1em

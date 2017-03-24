@@ -1,0 +1,175 @@
+// SaSS
+@import 'animations'
+@import 'spinner'
+
+$projects: "proj_1", "proj_2", "proj_3", "proj_4", "proj_5", "proj_6", "proj_7", "proj_8"
+
+%thumb_unit_style
+    width: 25%
+    float: left
+    position: relative
+    background:
+        position: center
+        repeat: no-repeat
+        size: cover
+    padding-top: 15%
+    overflow: hidden
+    cursor: pointer
+
+%displaying
+    display: block
+
+.alt_section
+    background-color: #e5eaee
+    padding: 80px 30px 80px 30px
+    overflow-x: hidden
+    +clearfix()
+
+    h3
+        color: #e2c185
+    
+    //for browsers without JS enabled
+    @each $proj in $projects
+        ##{$proj}:checked ~ .work_belt .work_wrap #work_container noscript div#content-#{$proj}
+            @extend %displaying
+
+    .trigger
+        display: none
+
+        &:checked ~ .work_belt
+            left: -100%
+
+            .work_wrap #work_container 
+                display: block
+                
+                noscript > div
+                    display: none
+                noscript div img
+                    max-width: 100%
+                    height: auto !important
+
+    .return
+        display: none
+    
+    //end of JS fix
+
+    #thumb_container
+        max-width: 1200px
+        margin: 20px auto
+        +clearfix()
+        +transition(700ms)
+
+        @media screen and (max-width: 900px)
+            +display(flex)
+            +align-items(center)
+            +justify-content(center)
+            flex-wrap: wrap
+            height: 500px
+
+            label
+                width: 30%
+                height: 15%
+                margin-right: 5px
+                div[class^="thumb_unit"]
+                    width: 100%
+                    height: 100%
+                    //margin-right: 5px
+
+        @media screen and (max-width: 701px)
+            label
+                height: 17%
+
+        @media screen and (max-width: 650px)
+            label
+                width: 48%
+                height: 15%
+		
+        div
+            .thumb_overlay
+                +position(absolute, 0px 0px 0px 0px)
+                opacity: 0
+                background: fade-out(#c99065, 0.1)
+                text-align: center
+                padding-top: 10%
+                +transition(opacity, 600ms)
+
+                @media screen and (max-width: 760px)
+                    display: none				
+				
+                strong
+                    text-transform: uppercase
+                    color: white
+                    font-size: 90%
+                    font-family: Tahoma
+                    font-weight: normal
+                    letter-spacing: 4px
+                    +clearfix
+                img
+                    +size(50px)
+            
+            &:hover .thumb_overlay
+                @extend %animation
+                opacity: 1
+
+    @for $i from 1 through 8
+        .thumb_unit-#{$i}
+            background:
+                image: url('../assets/work/thumb#{$i}.jpg')
+            @extend %thumb_unit_style
+            
+
+.work_belt
+    position: relative
+    width: 200%
+    left: 0%
+    +transition(700ms)
+    +clearfix()
+    
+    .thumb_wrap, .work_wrap
+        width: 50%
+        float: left
+
+        #work_container
+            position: relative
+            max-width: 1200px
+            margin-left: 30%
+            margin-top: 50px
+            display: none
+
+            @media screen and (max-width: 930px)
+                margin-left: 20%
+
+            .work_return
+                background-image: url('../assets/work/back-button.png')
+                background-repeat: no-repeat
+                +size(64px)
+                opacity: 0.7
+                +position(absolute, -20px 0xp 0xp -100px)
+                +transition
+
+                &:hover
+                    opacity: 1
+            
+            @media screen and (max-width: 630px)
+                margin-left: 10%        
+                
+                .work_return
+                    top: -50px
+                    left: -6px
+                    background-size: 60%					
+				
+            h4
+                text-transform: uppercase
+                color: #e2c185
+                font-size: 105%
+                font-family: Tahoma
+                font-weight: normal
+                letter-spacing: 4px
+                margin-bottom: 20px
+
+            .work_load
+                img
+                    max-width: 100%
+                    height: auto !important
+
+                    

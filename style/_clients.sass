@@ -1,0 +1,154 @@
+%client_logo_style
+    margin-right: 20px
+    opacity: 0.4
+    padding-bottom: 10px
+    border-bottom: 5px solid white
+    cursor: pointer
+    z-index: 1
+
+%quotes_style
+    +size(60px)
+    opacity: 0.3
+    svg path
+        fill: #e2c185
+
+.clients-section
+    position: relative
+
+    .mobile_nav
+        display: none
+        text-align: center
+        margin: 30px auto
+        
+
+        span
+            +size(16px)
+            border: 2px solid #e5eaee
+            border-radius: 50%
+            margin: 0px 5px null null
+            padding: 0
+            cursor: pointer
+
+            &.active_client
+                border-color: #b5845e
+
+        @media screen and (max-width: 735px)
+            display: block
+
+    .client_controls
+        +position(absolute, 0px 0px 0px 0px)
+        > div
+            +size(50px)
+            +position(absolute)
+            top: 50%
+            margin-top: -25px
+            cursor: pointer
+            
+            svg
+                +size(50px)
+                path
+                    +transition(200ms)
+				
+            &:hover svg path
+                fill: #b5845e
+        
+        .next_control    
+            right: 0px
+            margin-right: 150px
+		
+        .back_control
+            margin-left: 150px
+
+        @media screen and (max-width: 1250px)
+            display: none
+
+    h3
+        color: #e2c185
+    
+    .clients_belt
+        width: 100%
+
+        .client_unit
+            max-width: 750px
+            margin: 40px auto 0 auto
+            display: none
+            @extend %animation
+
+            &.active_client
+                +display(flex)
+            
+            @media screen and (max-width: 920px)
+                flex-wrap: wrap
+                
+                .client
+                    margin: 0 auto 15px auto
+                .content
+                    margin: 0 auto
+                    .first_quote, .last_quote
+                        > svg
+                            display: none
+                    p
+                        font-size: 16px
+                        margin: null 10px null 10px
+                        &::before
+                            content: "\""
+                        &::after
+                            content: "\""
+
+            .client
+                text-align: center
+                min-width: 300px
+
+                .client_face img
+                    +size(110px)
+                    border-radius: 50%
+                    +user-select(none)
+
+                .client_title
+                    margin-top: 10px
+                    color: #666666
+                    line-height: 17px
+                    letter-spacing: 1px
+                    strong
+                        +display(block)
+                        font:
+                            family: OpenSans
+                            size: 18px
+                            weight: 500
+                    em
+                        font-style: normal
+
+            .content
+                color: #666666
+                font:
+                    family: OpenSans
+                    size: 20px
+                line-height: 32px
+                position: relative
+
+                .first_quote
+                    @extend %quotes_style
+                    +position(absolute, -22px null null -13px)
+                    
+                .last_quote
+                    @extend %quotes_style
+                    +position(absolute, null 0px -17px null)
+                    transform: rotate(180deg)
+    .logos
+        max-width: 900px
+        margin: 80px auto 100px auto
+        +display(flex)
+        +align-items(flex-end)
+        +justify-content(space-around)
+        +flex-wrap(wrap)
+        z-index: 2
+
+        img
+            @extend %client_logo_style
+            
+            &.active_client
+                border-bottom: 5px solid #b5845e
+                opacity: 1
+
+        @media screen and (max-width: 735px)
+            display: none

@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width= device-width, initial-scale= 1.0, minimum-scale=1, maximum-scale=1" />
+    <title>Personal Website</title>
+	<link rel="stylesheet" href="style/CSS.css" />
+    <link rel="stylesheet" href="style/CSS_from_sass.css" />
+    <script src="JS/jquery-3.1.0.min.js"></script>
+    <script src="JS/jQ_code.js"></script>
+    </head>
+<body>
+
+<header>
+
+<nav>
+	<a href="#about">about me</a>
+	<a href="#work">work</a>
+	<a href="#clients">clients</a>
+	<a href="#contact">contact</a>
+</nav>
+
+<h1><span>artists theme</span></h1>
+<h3>thinker // designer // youtuber</h3>
+</header>
+
+<section>
+
+<h3 id="about">about myself</h3>
+
+	<div id = "about_me">
+        <div id = "pic_me"></div>
+		<div id = "icon-pencil"></div>
+		<div id = "icon-mouse"></div>
+		<div id = "icon-browser"></div>
+		<div id = "icon-video"></div>
+	</div>
+	<p class="para_about">
+	<strong>In pellentesque faucibus vestibulum.</strong> Nulla at nulla justo, eget luctus tortor. Nulla facilisi. 
+	Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, 
+	lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+	per inceptos himenaeos. Sed molestie augue sit amet leo consequat
+	</p>
+
+	<div id = "skills"> <!--675px wide-->
+	    <div id="comm"><!--300px wide-->
+            <p>Communication</p>
+            <progress value="70" max="100"></progress>
+        </div>
+        <div id="org">
+            <p>Organization</p>
+            <progress value="95" max="100"></progress>
+        </div>
+        <div id="learn">
+            <p>Learning</p>
+            <progress value="80" max="100"></progress>
+        </div>
+        <div id="teach">
+            <p>Teaching</p>
+            <progress value="70" max="100"></progress>
+        </div>
+        <div id="plan">
+            <p>Planning</p>
+            <progress value="70" max="100"></progress>
+        </div>
+        <div id="design">
+            <p>Visual Design</p>
+            <progress value="80" max="100"></progress>
+        </div>
+        <div id="ux">
+            <p>UX Design</p>
+            <progress value="50" max="100"></progress>
+        </div>
+        <div id="prog">
+            <p>Programming</p>
+            <progress value="70" max="100"></progress>
+        </div>
+	</div>
+	
+</section>
+
+<section class="alt_section"> <!--work section, grey background-->
+    <h3 id="work">work</h3>
+
+        <input type="radio" class="trigger" name="trigger" id="proj_1">
+        <input type="radio" class="trigger" name="trigger" id="proj_2">
+        <input type="radio" class="trigger" name="trigger" id="proj_3">
+        <input type="radio" class="trigger" name="trigger" id="proj_4">
+        <input type="radio" class="trigger" name="trigger" id="proj_5">
+        <input type="radio" class="trigger" name="trigger" id="proj_6">
+        <input type="radio" class="trigger" name="trigger" id="proj_7">
+        <input type="radio" class="trigger" name="trigger" id="proj_8">
+        <input type="radio" name="trigger" id="return" class="return">
+
+    <div class="work_belt">
+        <div class="thumb_wrap">
+            <div id="thumb_container"> <!--all work images-->
+
+                <label for="proj_1">
+                    <div class="thumb_unit-1"><!--one work image-->
+                        <div class="thumb_overlay">
+                            <strong>TYPO INTERNATIONAL</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div><!--end of thumb unit-->
+                </label>
+                <label for="proj_2">
+                    <div class="thumb_unit-2">
+                        <div class="thumb_overlay">
+                            <strong>CITY IN</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_3">
+                    <div class="thumb_unit-3">
+                        <div class="thumb_overlay">
+                            <strong>CRISP ICONS</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_4">
+                    <div class="thumb_unit-4">
+                        <div class="thumb_overlay">
+                            <strong>FLAT AND MODERN DESIGN</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_5">
+                    <div class="thumb_unit-5">
+                        <div class="thumb_overlay">
+                            <strong>FRESH IT UP</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_6">
+                    <div class="thumb_unit-6">
+                        <div class="thumb_overlay">
+                            <strong>TIMELINE PAGE</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_7">
+                    <div class="thumb_unit-7">
+                        <div class="thumb_overlay">
+                            <strong>A WINTER WONDERLAND</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+                <label for="proj_8">
+                    <div class="thumb_unit-8">
+                        <div class="thumb_overlay">
+                            <strong>STRIPES AND CO</strong>
+                            <img src="assets/glass_plus.svg" alt="icon">
+                        </div>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div class="work_wrap">
+            <div id="work_container">
+                <label for="return">
+                    <div class="work_return"></div>
+                </label>
+                <div class="work_title"></div>
+                <div class="work_load"></div>
+
+                <noscript>
+                    <p style="position: absolute; top: -120px; left: -97px; color: #717571;"><strong>JavaScript</strong> in your web browser <strong>is disabled</strong> 
+                        or your browser doesn't support it. Please enable JavaScript or install newer web browser for full website experience.
+                    </p>
+                    <div id="content-proj_1">
+                        <h4>TYPO INTERNATIONAL</h4>
+                        <img src="assets/work/proj_1/img1.jpg" alt="pic">
+                        <img src="assets/work/proj_1/img2.jpg" alt="pic">
+                        <img src="assets/work/proj_1/img3.jpg" alt="pic">
+                        <img src="assets/work/proj_1/img4.jpg" alt="pic">
+                        <img src="assets/work/proj_1/img5.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_2">
+                        <h4>CITY IN</h4>
+                        <img src="assets/work/proj_2/img1.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_3">
+                        <h4>CRISP ICONS</h4>
+                        <img src="assets/work/proj_3/img1.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_4">
+                        <h4>FLAT AND MODERN DESIGN</h4>
+                        <img src="assets/work/proj_4/img1.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_5">
+                        <h4>FRESH IT UP</h4>
+                        <img src="assets/work/proj_5/img1.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_6">
+                        <h4>TIMELINE PAGE</h4>
+                        <img src="assets/work/proj_6/img1.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_7">
+                        <h4>A WINTER WONDERLAND</h4>
+                        <img src="assets/work/proj_7/img0.jpg" alt="pic">
+                        <img src="assets/work/proj_7/img1.jpg" alt="pic">
+                        <img src="assets/work/proj_7/img2.jpg" alt="pic">
+                        <img src="assets/work/proj_7/img3.jpg" alt="pic">
+                        <img src="assets/work/proj_7/img4.jpg" alt="pic">
+                    </div>
+                    <div id="content-proj_8">
+                        <h4>STRIPES AND CO</h4>
+                        <img src="assets/work/proj_8/img1.jpg" alt="pic">
+                    </div>
+                </noscript>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="clients-section">
+    <h3 id="clients">clients</h3>
+
+    <div class="mobile_nav">
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="client_controls">
+        <div class="back_control">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             enable-background="new 0 0 40 40" xml:space="preserve">
+            <path d="M26.724,35.662L11.876,20.705c-0.387-0.389-0.387-1.02,0-1.41L26.724,4.338c0.387-0.39,1.013-0.39,1.4,0
+	            c0.387,0.389,0.387,1.02,0,1.41L13.976,20l14.148,14.252c0.387,0.39,0.387,1.021,0,1.41c-0.193,0.195-0.447,0.292-0.7,0.292
+	            C27.17,35.954,26.917,35.857,26.724,35.662z"/>
+            </svg>
+        </div>
+        <div class="next_control">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             enable-background="new 0 0 40 40" xml:space="preserve">
+            <path d="M12.576,35.954c-0.253,0-0.507-0.097-0.7-0.292c-0.387-0.389-0.387-1.021,0-1.41L26.024,20L11.876,5.748
+	            c-0.387-0.389-0.387-1.02,0-1.41c0.387-0.39,1.013-0.39,1.4,0l14.847,14.957c0.387,0.389,0.387,1.021,0,1.41L13.276,35.662
+	            C13.083,35.857,12.83,35.954,12.576,35.954z"/>
+            </svg>
+        </div>
+    </div>
+
+    <div class="clients_belt">
+        <div class="client_unit">
+            <div class="client">
+                <div class="client_face">
+                    <img src="assets/clients/face-aaroni.jpg">
+                </div>    
+                <div class="client_title">
+                    <strong>SCOTT SUMMERS</strong>
+                    <em>Director of design, Quebec Inc.</em>
+                </div>
+            </div>
+            <div class="content">
+                <div class="first_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <div class="last_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <p>
+                    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Fusce felis tellus, porttitor in commodo id, ultrices vel dolor. In vehicula placerat mauris ac lobortis. 
+                    Integer sit amet egestas nisl, vitae auctor urna. Aliquam nisl diam, imperdiet at ultricies et, 
+                    pretium pulvinar nunc. Sed sed nulla mattis, lacinia est non, blandit dui.
+                </p>
+            </div>
+        </div>
+        <div class="client_unit">
+            <div class="client">
+                <div class="client_face">
+                    <img src="assets/clients/face-atariboy.jpg">
+                </div>    
+                <div class="client_title">
+                    <strong>SCOTT SUMMERS</strong>
+                    <em>Director of design, Quebec Inc.</em>
+                </div>
+            </div>
+            <div class="content">
+                <div class="first_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <div class="last_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <p>
+                    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Fusce felis tellus, porttitor in commodo id, ultrices vel dolor. In vehicula placerat mauris ac lobortis. 
+                    Integer sit amet egestas nisl, vitae auctor urna. Aliquam nisl diam, imperdiet at ultricies et, 
+                    pretium pulvinar nunc. Sed sed nulla mattis, lacinia est non, blandit dui.
+                </p>
+            </div>
+        </div>
+        <div class="client_unit">
+            <div class="client">
+                <div class="client_face">
+                    <img src="assets/clients/face-jackiesaik.jpg">
+                </div>    
+                <div class="client_title">
+                    <strong>SCOTT SUMMERS</strong>
+                    <em>Director of design, Quebec Inc.</em>
+                </div>
+            </div>
+            <div class="content">
+                <div class="first_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <div class="last_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <p>
+                    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Fusce felis tellus, porttitor in commodo id, ultrices vel dolor. In vehicula placerat mauris ac lobortis. 
+                    Integer sit amet egestas nisl, vitae auctor urna. Aliquam nisl diam, imperdiet at ultricies et, 
+                    pretium pulvinar nunc. Sed sed nulla mattis, lacinia est non, blandit dui.
+                </p>
+            </div>
+        </div>
+        <div class="client_unit">
+            <div class="client">
+                <div class="client_face">
+                    <img src="assets/clients/face-teleject.jpg">
+                </div>    
+                <div class="client_title">
+                    <strong>SCOTT SUMMERS</strong>
+                    <em>Director of design, Quebec Inc.</em>
+                </div>
+            </div>
+            <div class="content">
+                <div class="first_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <div class="last_quote">
+                    <?xml version="1.0" encoding="utf-8"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     enable-background="new 0 0 55 55" xml:space="preserve">
+                    <path d="M50.692,9.732c-12.207,6.16-18.309,14.697-18.309,25.615c0,3.64,1.147,6.733,3.443,9.28c2.295,2.548,5.01,3.821,8.146,3.821
+	                    c2.799,0,5.123-0.979,6.971-2.939c1.848-1.959,2.771-4.367,2.771-7.223c0-2.688-0.953-5.052-2.855-7.097
+	                    c-1.904-2.043-4.312-3.233-7.223-3.569c0-4.535,3.415-8.482,10.246-11.842L50.692,9.732z M19.87,9.732
+	                    C7.72,15.891,1.645,24.429,1.645,35.347c0,3.64,1.134,6.733,3.401,9.28c2.268,2.548,4.968,3.821,8.104,3.821
+	                    c2.799,0,5.136-0.979,7.013-2.939c1.875-1.959,2.813-4.367,2.813-7.223c0-2.688-0.953-5.052-2.856-7.097
+	                    c-1.904-2.043-4.34-3.233-7.307-3.569c0-4.535,3.443-8.482,10.33-11.842L19.87,9.732z"/>
+                    </svg>
+                </div>
+                <p>
+                    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Fusce felis tellus, porttitor in commodo id, ultrices vel dolor. In vehicula placerat mauris ac lobortis. 
+                    Integer sit amet egestas nisl, vitae auctor urna. Aliquam nisl diam, imperdiet at ultricies et, 
+                    pretium pulvinar nunc. Sed sed nulla mattis, lacinia est non, blandit dui.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="logos">
+        <img class="client_logo1" src="assets/clients/logo1.png" alt="" />
+        <img class="client_logo2" src="assets/clients/logo2.png" alt="" />
+        <img class="client_logo3 " src="assets/clients/logo3.png" alt="" />
+        <img class="client_logo4" src="assets/clients/logo4.png" alt="" />
+    </div>
+</section>
+
+<section class="alt_section contact">
+    <h3 id="contact">contact</h3>
+
+    <div class="icons">
+        <a href="" target="_new" class="icon-facebook"></a>
+        <a href="" class="icon-twitter"></a>
+        <a href="" class="icon-linkedin"></a>
+        <a href="" class="icon-youtube"></a>
+        <a href="" class="icon-behance"></a>
+    </div>
+    <hr />
+    <div class="artist-mail">
+        <a href="mailto:artist@gmail.com">artist@gmail.com</a>
+    </div>
+</section>
+
+<section class="contact-form">
+	<h3 id="contact">let's work together</h3>
+	<form class="contact_form" action="" method="" onsubmit="return false;">
+		
+		<div class="contact_info">
+			<label>
+				<span>Your Name</span>
+				<input type="text">
+			</label>
+			
+			<label>
+				<span>Your Email</span>
+				<input type="text">
+			</label>
+		</div>
+		
+		<div class="about_project">
+			<label>
+				<span>Tell me about your project</span>
+				<textarea></textarea>
+			</label>
+		</div>
+		
+		<input type="submit" value="send">
+	
+	</form>
+</section>
+
+
+
+<footer>
+<nav id="footer_nav">
+	<a href="#about">about me</a>
+	<a href="#work">work</a>
+	<a href="#clients">clients</a>
+	<a href="#contact">contact</a>
+<p>all content copyright 2017</p>
+</nav>
+
+</footer>
+</body>
+</html>
